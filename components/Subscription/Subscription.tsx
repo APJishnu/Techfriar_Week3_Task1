@@ -15,7 +15,7 @@ const Subscription: React.FC = () => {
               <input type="email" placeholder="Email" />
             </div>
             <p className={styles.adsParagraph}>
-              Please Select The Ways You Would Like To Hear From Diamondlease, And Confirm That You're Happy For
+              Please Select The Ways You Would Like To Hear From Diamondlease, And Confirm That You re Happy For
               Us To Store Your Data In Line With Our Privacy Policy.
             </p>
             <button className={styles.adsBtn}>Subscribe</button>
