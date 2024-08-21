@@ -53,9 +53,10 @@ const Subscription: React.FC = () => {
                   setEmailError(''); // Clear error message on input change
                 }}
               />
+               </div>
               {/* Show error message if email is invalid */}
               {emailError && <p className={styles.errorMessage}>{emailError}</p>}
-            </div>
+           
             <p className={styles.adsParagraph}>
               Please Select The Ways You Would Like To Hear From Diamondlease, And Confirm That You re Happy For
               Us To Store Your Data In Line With Our Privacy Policy.
@@ -89,7 +90,7 @@ const Subscription: React.FC = () => {
       <div className={styles.subscriptionContainer}>
         <h2 className={styles.subscribeHeader}>Subscribe here for exclusive offers and updates!</h2>
         <form className={styles.subscriptionForm} onSubmit={handleSubscribe} noValidate>
-          <div className={styles.inputWrapper}>
+
             <input
               type="text"
               placeholder="Name"
@@ -107,8 +108,8 @@ const Subscription: React.FC = () => {
                 setEmailError(''); // Clear error message on input change
               }}
             />
-          </div>
-          <div className={styles.errorDiv}>
+     
+
           {/* Show error message if email is invalid */}
           {emailError && <p className={styles.errorMessage}>{emailError}</p>}
           <p className={styles.privacyText}>
@@ -116,7 +117,7 @@ const Subscription: React.FC = () => {
             Store Your Data In Line With Our Privacy Policy.
           </p>
           <button type="submit" className={styles.subscribeButton}>Subscribe</button>
-          </div>
+
         </form>
         {/* App promotion section */}
         <div className={styles.appPromoContainer}>
