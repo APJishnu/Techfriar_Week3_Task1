@@ -26,6 +26,7 @@
     box-sizing: border-box;
     position: fixed;
     z-index: 1006;
+    
 }
 
 /* Social icons container */
@@ -205,7 +206,9 @@
     position: fixed;
     z-index: 1004;
     top: 80px;
+    margin-left: 420px;
     animation: marquee 30s linear infinite;
+    
    
 }
 
@@ -387,6 +390,7 @@
         text-align: center;
     }
     .greeting {
+    
         font-weight: 400;
         font-size: 10px;
         line-height: 56.74px;
@@ -398,7 +402,8 @@
         display: block;
         position: fixed;
         z-index: 1004;
-        margin-top: 0px;
+        margin-top: -5px;
+        margin-left: -400px!important;
         animation: marquee 30s linear infinite;
     }
 }
