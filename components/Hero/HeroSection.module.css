@@ -439,10 +439,6 @@
     color: white; /* Active button text color */
 }
 
-.activeButton{
-    background-color: #E21E26; /* Active button background color */
-    color: white;
-}
 
 .tripOptionsContainer {
     width: 100%;
