@@ -51,12 +51,11 @@ const Subscription: React.FC = () => {
           <input type="text" placeholder="Name" className={styles.inputField} />
           <input type="email" placeholder="Email" className={styles.inputField} />
           <p className={styles.privacyText}>
-            Please Select The Ways You Would Like To Hear From Diamondlease, And Confirm That You're Happy For Us To
+            Please Select The Ways You Would Like To Hear From Diamondlease, And Confirm That You re Happy For Us To
             Store Your Data In Line With Our Privacy Policy.
           </p>
           <button type="submit" className={styles.subscribeButton}>Subscribe</button>
         </form>
-
         {/* App promotion section */}
         <div className={styles.appPromoContainer}>
           <div className={styles.appStores}>
