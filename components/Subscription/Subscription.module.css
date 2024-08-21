@@ -1,3 +1,46 @@
+
+/* Popup Styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popupContent {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+.popupClose {
+  background: #e21e26;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Error message styles */
+.errorMessage {
+  color: #e21e26;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+
+
 /* Wrapper for centering content */
 .adsWrapper {
     display: flex;
