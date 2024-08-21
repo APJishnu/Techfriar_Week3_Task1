@@ -10,21 +10,21 @@ const images = [
     text1: "Receive guaranteed",
     buttonText: "GIFT VOUCHER",
     text2: "on a monthly hire or lease",
-    link: "https://example.com/"
+    link: "https://samplewebsite.online"
   },
   {
     src: "../Carousel/Carousel.svg",
     text1: "Another promotion",
     buttonText: "CLAIM NOW",
     text2: "Limited time offer",
-    link: "https://example.com/"
+    link: "https://samplewebsite.online"
   },
   {
     src: "../Carousel/Carousel.svg",
     text1: "Special offer",
     buttonText: "GET STARTED",
     text2: "Sign up today",
-    link: "https://example.com/"
+    link: "https://samplewebsite.online"
   }
 ];
 
