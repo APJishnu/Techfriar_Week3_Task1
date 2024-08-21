@@ -89,23 +89,26 @@ const Subscription: React.FC = () => {
       <div className={styles.subscriptionContainer}>
         <h2 className={styles.subscribeHeader}>Subscribe here for exclusive offers and updates!</h2>
         <form className={styles.subscriptionForm} onSubmit={handleSubscribe} noValidate>
-          <input
-            type="text"
-            placeholder="Name"
-            className={styles.inputField}
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            className={styles.inputField}
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-              setEmailError(''); // Clear error message on input change
-            }}
-          />
+          <div className={styles.inputWrapper}>
+            <input
+              type="text"
+              placeholder="Name"
+              className={styles.inputField}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              className={styles.inputField}
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                setEmailError(''); // Clear error message on input change
+              }}
+            />
+          </div>
+          <div className={styles.errorDiv}>
           {/* Show error message if email is invalid */}
           {emailError && <p className={styles.errorMessage}>{emailError}</p>}
           <p className={styles.privacyText}>
@@ -113,6 +116,7 @@ const Subscription: React.FC = () => {
             Store Your Data In Line With Our Privacy Policy.
           </p>
           <button type="submit" className={styles.subscribeButton}>Subscribe</button>
+          </div>
         </form>
         {/* App promotion section */}
         <div className={styles.appPromoContainer}>
@@ -132,10 +136,10 @@ const Subscription: React.FC = () => {
             </div>
           </div>
           <div className={styles.inputTagAndButtonDiv}>
-            <div className={styles.Input}><input type="tel" placeholder="Enter Phone Number" className={styles.inputField} /></div> 
-            </div>
-            <div className={styles.GetTheLinkDiv}><button className={styles.getLinkButton}>Get the link</button></div>
-       
+            <div className={styles.Input}><input type="tel" placeholder="Enter Phone Number" className={styles.inputField} /></div>
+          </div>
+          <div className={styles.GetTheLinkDiv}><button className={styles.getLinkButton}>Get the link</button></div>
+
         </div>
       </div>
 

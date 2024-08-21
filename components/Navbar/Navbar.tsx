@@ -48,11 +48,12 @@ import Link from 'next/link';
                 </li>
               </div>
             </ul>
-            <div className={styles.greeting}>
-              Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand Sales Counters | All Rates inclusive of VAT. T&C s apply | Follow us on Social Media for New Offers
-            </div>
+            
           </div>
         </div>
+        <div className={styles.greeting}>
+              Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand Sales Counters | All Rates inclusive of VAT. T&C s apply | Follow us on Social Media for New Offers
+            </div>
           {/* Mobile menu toggle button */}
           <div className={styles.mobileToggle} onClick={toggleMobileMenu}>
           <span className={styles.toggleIcon}><img src="./Navbar/Nav-toggle.svg" alt="" /></span>

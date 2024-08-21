@@ -285,21 +285,7 @@
     height: 29px;
 }
 
-.greetingMobile {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 56.74px;
-    letter-spacing: -0.035em;
-    text-align: center;
-    width: 770px;
-    height: 7px;
-    opacity: 50%;
-    display: block;
-    position: fixed;
-    z-index: 1004;
-    top: 70px;
-    animation: marquee 30s linear infinite;
-}
+
 
 /* Media Queries for Responsive Design */
 
@@ -352,7 +338,7 @@
         align-items: center;
         justify-content: space-between; /* Change from center to space-between */
         height: 114px;
-        position: relative;
+        position: fixed;
     }
 
     .mobileToggle {
@@ -399,6 +385,21 @@
     .profileLink {
         width: 100%;
         text-align: center;
+    }
+    .greeting {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 56.74px;
+        letter-spacing: -0.035em;
+        text-align: center;
+        width: 770px;
+        height: 7px;
+        opacity: 50%;
+        display: block;
+        position: fixed;
+        z-index: 1004;
+        margin-top: 0px;
+        animation: marquee 30s linear infinite;
     }
 }
 

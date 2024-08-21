@@ -29,6 +29,7 @@
     -webkit-overflow-scrolling: touch;
     padding-bottom: 20px;
     scrollbar-width: none;
+    
 }
 
 .carsContainer::-webkit-scrollbar {
@@ -40,7 +41,7 @@
     flex: 0 0 auto;
     width: 754px;
     height: 290px;
-    border: 0.5px solid rgba(0, 0, 0, 0.129);
+    border: 1px solid rgba(0, 0, 0, 0.129);
     display: flex;
     scroll-snap-align: start;
 }
@@ -162,7 +163,7 @@
 .cars {
     flex: 0 0 207px;
     height: 330px !important;
-    box-shadow:  1px rgba(0, 0, 0, 0.1);
+    box-shadow:  2px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     overflow: hidden;
