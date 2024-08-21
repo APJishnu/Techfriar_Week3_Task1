@@ -1,0 +1,165 @@
+/* Carousel.module.css */
+
+/* Carousel container styling */
+.carouselContainer {
+    width: 100%;
+    padding-left: 64px;
+    padding-right: 64px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+
+/* Carousel styling */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 28.125vw;
+    overflow: hidden;
+    border-radius: 23px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  
+}
+
+/* Carousel images styling */
+.carouselImages {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carouselImages img {
+    width: 100%;
+    height: 28.125vw;
+    object-fit: cover;
+}
+
+/* Carousel dots styling */
+.carouselDots {
+    position: absolute;
+    bottom: 2.7vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.35vw;
+}
+
+.carouselDots .dot {
+    width: 0.7vw;
+    height: 0.7vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carouselDots .dot.active {
+    background-color: #717171;
+}
+
+/* Carousel text styling */
+.carouselText {
+    position: absolute;
+    top: 18vw; /* Adjust this based on your design needs */
+    width: 30vw; /* Adjust this based on your design needs */
+    text-align: justify;
+    margin-left: 2vw; /* Adjust this based on your design needs */
+    color: white;
+    font-size: 2vw; /* Adjust font size based on your design needs */
+}
+
+.carouselTextHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+.text1 {
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+.text2 {
+    font-size: 1vw;
+    font-weight: 400;
+    margin-top: -0.5vw;
+}
+
+/* Button styling */
+.carouselButton {
+    width: 50%;
+    padding: 0.3vw 1.1vw;
+    font-size: 1.1vw;
+    font-weight: 400;
+    border-radius: 1.7vw;
+    background-color: #009046;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carouselButton:hover {
+    background-color: #00753a;
+}
+
+
+@media (min-width:801px)and(max-width: 1250px){
+    
+    .carouselText {
+        top: 140px;
+    }
+}
+
+
+/* Mobile-specific styling */
+@media (max-width: 800px) {
+    .carouselContainer {
+        width: 100vw;
+        height: 217px;
+        margin: 0;
+        padding: 0;
+       
+    }
+
+    .carousel {
+        width: 100vw;
+        height: 217px;
+        border-radius: 0;
+    }
+
+    .carouselImages img {
+        height: 217px;
+    }
+
+    .carouselDots {
+        bottom: 28px;
+        gap: 5px;
+    }
+
+    .carouselDots .dot {
+        width: 7px;
+        height: 7px;
+    }
+
+    .carouselText {
+        top: 140px;
+        width: 220px;
+    }
+
+    .text1,
+    .text2,
+    .carouselButton {
+        font-size: 9px;
+    }
+
+    .carouselButton {
+        width: 50%;
+    }
+}

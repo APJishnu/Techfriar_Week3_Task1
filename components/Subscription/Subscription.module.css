@@ -1,0 +1,314 @@
+/* Wrapper for centering content */
+.adsWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  
+  .adsContainer {
+    position: relative;
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 506px;
+    margin: 40px 0;
+    padding-left: 142px;
+    padding-right: 64px;
+  }
+  
+  /* Left section - subscription form */
+  .adsDetails {
+    width: 50%;
+    max-width: 590px;
+    height: 506px;
+    padding-right: 100px;
+  }
+  
+  .adsHeading {
+    font-weight: 400;
+    line-height: 51px;
+    font-size: 34px;
+    padding-top: 30px;
+  }
+  
+  .adsInputFields {
+    display: flex;
+    gap: 17px;
+    margin-bottom: 20px;
+    margin-top: 41px;
+  }
+  
+  .adsInputFields input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-left: 16px;
+    background: #f8f8f8;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  .adsParagraph {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+  
+  .adsBtn {
+    width: 100%;
+    height: 57px;
+    border-radius: 5px;
+    background: #e21e26;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: 0;
+  }
+  
+  /* Right section - app promo */
+  .adsDetails2 {
+    display: flex;
+    align-items: center;
+    background: #e21e26;
+    width: 50%;
+    max-width: 644px;
+    height: 506px;
+    padding-left: 30px;
+  }
+  
+  .mobileImgDiv {
+    margin-right: 20px;
+   
+  }
+  
+  .mobileDiv2 {
+    color: #ffffff;
+    padding-right: 60px;
+  }
+  .appImage{
+    width: 231px;
+    height: 417px;
+  }
+  
+  .mobileDiv2 h6 {
+    margin-top: 45px;     
+    font-size: 14px;     
+    font-weight: 500;
+  }
+  
+  .mobileLinks {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .mobileLinks img {
+    width: 100%;
+    height: 30px;
+  }
+  
+  .paragraph1MobileDiv2 {
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  
+  .inputDiv input {
+    width: auto;
+    height: 45px;
+    border-radius: 5px;
+    background: #f8f8f8;
+    padding-left: 22px;
+    border: 0;
+    outline: none;
+  }
+  
+  .mobileBtn {
+    width: 144px;
+    height: 42px;
+    border-radius: 8px;
+    background: #000000;
+    color: #ffffff;
+    border: 0;
+    margin-top: 23px;
+  }
+
+  .subscriptionContainer {
+    display: none;
+
+  }
+  
+  @media (max-width: 800px) {
+
+    /* Wrapper for centering content */
+.adsWrapper{
+    display: none;
+}
+
+    .subscriptionContainer {
+      display: block;
+      padding: 0px 16px;
+    }
+  
+    .subscribeHeader {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+  
+    .subscriptionForm {
+      padding: 0px;
+      padding-right: 16px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  
+    .inputField {
+      width: 100%;
+      padding: 18px 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 0;
+      background: #f8f8f8;
+      outline: none;
+    }
+  
+    .privacyText {
+      font-size: 0.8em;
+      margin-bottom: 20px;
+    }
+  
+    .subscribeButton {
+      padding: 10px 20px;
+      background: #e21e26;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  
+    .appPromoContainer {
+        height: 390px;
+      background: #e21e26;
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+      align-items: center;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+     
+    }
+  
+    .appStores {
+        width: 100%;
+      position: relative;
+      height: 245px;
+      display: flex;
+        justify-content: left;
+        padding-top: 8px;
+        margin-left: 8px;
+       
+      
+    }
+  
+    .inputTagAndButtonDiv {
+   
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    justify-content: center;
+      margin: 0 !important;
+      padding: 0px 16px;
+      margin-bottom: 24px;
+      
+    }
+    .inputTagAndButtonDiv .inputField{
+   
+      width: 100%;
+      display: flex;
+
+      align-items: left;
+      justify-content: left;
+      padding:16px 16px;
+      outline: none;
+      
+    }
+    .Input{
+        display: flex;
+        align-items: center;
+        padding: 0px 16px;
+    }
+  
+    .GetTheLinkDiv{
+        width: 100%;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        padding-left: 32px;
+    }
+
+    .getLinkButton {
+      width: 129px;
+      height: 39px;
+      padding:9px 25px;
+      border-radius: 4px;
+      background-color: #000000;
+      color: #FFFFFF;
+      outline: none;
+      border: 0;
+    }
+  
+    .appImage {
+      width: 136px;
+      height: 245px;
+      margin-bottom: 10px;
+    }
+  
+    .appStoresGetItOn {
+       width: 100%;
+        display: flex;
+        flex-direction: column;
+      text-align: center;
+      align-items: left;
+     
+      padding-bottom: 16px;
+    }
+  
+    .getItOn {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: left;
+    }
+  
+    .getLinkImgDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .storeBadge {
+      width: 129px;
+      height: 40px;
+    }
+  
+    .promoText {
+      font-size: 12px;
+      padding-bottom: 20px;
+   
+      text-align: start;
+      
+    }
+  }
+  

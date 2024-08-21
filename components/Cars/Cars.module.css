@@ -1,0 +1,269 @@
+/* General Styles */
+
+/* Heading for desktop */
+.headingMpc {
+    width: 100%;
+    font-size: 34.5px;
+    line-height: 52.11px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Main container */
+.carsMainContainer {
+    width: 100%;
+    padding-left: 64px;
+}
+
+/* Cars container */
+.carsContainer {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    gap: 22px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+}
+
+.carsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+/* Individual car card */
+.cars {
+    flex: 0 0 auto;
+    width: 754px;
+    height: 290px;
+    border: 0.5px solid rgba(0, 0, 0, 0.129);
+    display: flex;
+    scroll-snap-align: start;
+}
+
+/* Image inside each car card */
+.carImage {
+    width: 360px;
+    height: 290px;
+}
+
+/* Car details */
+.carDetails {
+    width: 394px;
+    margin-left: 42px;
+    margin-right: 53px;
+}
+
+/* Car heading */
+.headingP {
+    width: 248px;
+    height: 42px;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 3px;
+}
+
+/* Content paragraph */
+.contentP {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+/* Car details list */
+.carDetailsLists {
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 34px;
+    margin-top: 40px;
+    width: 300px;
+    height: 17px;
+    align-items: center;
+    list-style: none;
+    font-size: 13px;
+}
+
+/* Price and booking button */
+.carPriceBooking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 37px;
+    margin-bottom: 26px;
+}
+
+/* Price paragraph */
+.priceP {
+    width: 152px;
+    height: 24px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+/* Booking button */
+.carPriceBtn {
+    width: 98px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    background: #E21E26;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: -2%;
+}
+
+/* Responsive Styles */
+
+/* Heading for mobile */
+@media (max-width: 768px) {
+   
+/* Mobile Styles */
+
+/* Heading for mobile */
+.headingMpc {
+    width: 100%;
+    height: 24px;
+    font-size: 16px;
+    margin: 16px 0px;
+    padding-left: 16px;
+   
+    text-align: left;
+}
+
+/* Main container for mobile */
+.carsMainContainer {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    padding: 0px;
+    gap: 12px;
+    margin: 0px;
+    height: 333px;
+    width: 100%;
+    margin-left: 16px;
+}
+
+.carsContainer {
+    height: inherit;
+}
+
+/* Individual car card for mobile */
+.cars {
+    flex: 0 0 207px;
+    height: 333px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 4px;
+}
+
+/* Image styling for mobile */
+.cars img {
+    width: 100%;
+    height: 127px;
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Car details for mobile */
+.carDetails {
+    position: relative;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    gap: 0px;
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+
+/* Car heading for mobile */
+.headingP {
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px !important;
+    color: #040404;
+    margin-left: 16px;
+    margin-top: 0px !important;
+    height: 20px;
+}
+
+/* Car description for mobile */
+.contentP {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis (...) for overflowed text */
+    margin-left: 10px;
+    padding: 0;
+}
+
+
+/* Car details list for mobile */
+.carDetailsLists {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    height: auto;
+    font-size: 8px;
+    margin-left: 16px;
+    margin-top:0px !important;
+    color: #777;
+    font-weight: 400;
+    -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.carDetailsLists img{
+  width:8px;
+  height: 8px;
+}
+
+/* Price and Book button for mobile */
+.carPriceBooking {
+    display: flex;
+    width: 100%;
+    margin-top: -40px;
+    margin-left: 16px;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+/* Price styling for mobile */
+.priceP {
+    font-size: 14px!important;
+}
+
+/* Book button styling for mobile */
+.carPriceBtn {
+    background: #E21E26;
+    width: 128px!important;
+    color: white;
+    border: none;
+    padding: 9px 0px!important;
+    font-size: 12px !important;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+}

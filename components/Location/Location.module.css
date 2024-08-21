@@ -1,0 +1,136 @@
+/* Location.module.css */
+
+/* Layer 6 section */
+.layer_6 {
+    width: 100%;
+    height: 325px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* Vertical line in Layer 6 */
+.verticalLine {
+    width: 1px;
+    height: 40px;
+    background-color: white;
+    margin-left: 20px;
+}
+
+/* Container within Layer 6 */
+.layer6Container {
+    width: 100%;
+    height: 325px;
+    margin: 0px 64px;
+    background: #000000;
+    color: #FFFFFF;
+}
+
+/* Heading inside Layer 6 container */
+.layer6HeadingDiv {
+    width: 100%;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 51px;
+    margin-top: 56px;
+}
+
+/* Locations list inside Layer 6 container */
+.layer6Locations {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 79px;
+    gap: 4%;
+    list-style: none;
+    padding: 0;
+}
+
+.layer6Locations li {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+.layer6Locations li p {
+    font-size: 100%;
+    opacity: 80%;
+    line-height: 25px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+    .layer_6 {
+        padding: 20px 16px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 151px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .layer6Container {
+        background-color: #000;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        height: 151px !important;
+        
+    }
+
+    .layer6Heading {
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .layer6HeadingDiv {
+        margin: 0 !important;
+        justify-content: left !important;
+        align-items: center;
+    }
+
+    .layer6Locations {
+        display: flex;
+        flex-wrap: wrap !important;
+        justify-content: left !important;
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+        column-gap: 30px !important;
+        width: 100%;
+    }
+
+    .layer6Locations li {
+        gap: 1px;
+        margin-bottom: 15px;
+        margin-top: 0px !important;
+        box-sizing: border-box;
+    }
+
+    .layer6Locations li img {
+        margin-right: 8px;
+        width: 14px;
+        height: 17px;
+    }
+
+    .layer6Locations li p {
+        font-size: 14px !important;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .verticalLine {
+        display: none;
+    }
+}

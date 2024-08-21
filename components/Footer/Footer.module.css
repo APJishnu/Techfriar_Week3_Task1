@@ -1,0 +1,264 @@
+/* Desktop Footer */
+.footer {
+    min-width: 100%;
+}
+
+.DesktopFooter {
+    height: 303px;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: #FFFFFF;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.footerContainer {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 40px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerLogo {
+    max-width: 200px;
+    flex-shrink: 0;
+}
+
+.footerLogo img {
+    width: 57px;
+    height: 66px;
+    margin-bottom: 10px;
+}
+
+.footerLogo p {
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    width: 105px;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 230px;
+}
+
+.footerColumn {
+    margin: 0;
+}
+
+.footerColumn ul {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    list-style: none;
+    padding: 0;
+}
+
+.footerColumn ul li {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.footerColumn ul li a,
+.AlHabthoorCompanyList ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footerColumn ul li a:hover {
+    text-decoration: underline;
+}
+
+.AlHabthoorCompanyList {
+    height: 57px;
+}
+
+.AlHabthoorCompanyList p {
+    font-size: 13px;
+    margin: 0;
+    color: #fff;
+}
+
+.AlHabthoorCompanyList ul {
+    margin-top: 15px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 21px;
+}
+
+.AlHabthoorCompanyList ul li {
+    font-size: 13px;
+}
+
+.footerRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialMedia ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    column-gap: 14px;
+}
+
+.socialMedia p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.socialMedia ul li {
+    margin: 0;
+}
+
+.socialMedia ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.socialMedia ul li a img {
+    width: 17px;
+    height: 17px;
+}
+
+.footerCertificates {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footerCertificates img {
+    width: 60px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.footerBottom {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #444;
+}
+
+.footerBottom p {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Mobile Footer */
+.mobileFooterMainDiv {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .DesktopFooter {
+        display: none;
+    }
+    .mobileFooterMainDiv {
+        display: block;
+    }
+}
+
+.mobileFooter {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F7F9;
+    color: #000000;
+}
+
+.mobileFooterTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.mobileFooterLogoDiv {
+    width: 116px;
+    height: 46px;
+}
+
+.mobileLogo {
+    width: 100%;
+}
+
+.mobileFooterIcons a {
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+}
+
+.mobileFooterIcons img {
+    width: 17px;
+    height: 17px;
+}
+
+.mobileFooterLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.mobileFooterLinks a {
+    color: #000000;
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.mobileFooterSection2 {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.mobileFooterTitle {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.mobileFooterServices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.mobileFooterServices a {
+    color: #fff;
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.mobileFooterSeal {
+    text-align: center;
+}
+
+.mobileSealIcon {
+    width: 58px;
+    height: 28px;
+}
+
+.mobileFooterBottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #444;
+}
+
+.mobileFooterBottom p {
+    font-size: 11px;
+    font-weight: 400;
+    margin: 0;
+}

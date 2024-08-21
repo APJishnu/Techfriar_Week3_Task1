@@ -1,0 +1,410 @@
+/* Animation keyframes for greeting marquee */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* Navbar container */
+.customNavbar {
+    width: 100%;
+    height: 121px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 40px 65px 64px;
+    /* Adjusted bottom padding to 0 for space management */
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1006;
+}
+
+/* Social icons container */
+.socialIcons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100vw; /* Full viewport width */
+    height: 15.5px;
+   
+    right: 0;
+    background-color: #ffffff; /* Match navbar background */
+    z-index: 1003;
+}
+
+.socialIcons a {
+    color: rgb(0, 0, 0);
+    font-size: 15.5px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+    color: #000000;
+}
+
+/* Navbar left side */
+.navbarLeft {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo styles */
+.logo {
+    width: 370px;
+    height: 54px;
+    margin-top: 25px;
+    margin-left: 10px;
+    transition: width 0.3s, height 0.3s; /* Smooth transition */
+}
+
+/* Navbar right side */
+.navbarRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: calc(100% - 354px - 64px); /* Full width minus the logo width and padding */
+}
+
+/* Navigation links container */
+.navLink {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 734px;
+    margin-top: 23.5px; /* Space between social icons and nav-link */
+    line-height: 22.5px;
+}
+
+/* Navigation menu styles */
+.navbarMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+    width: 734px;
+    height: 29px;
+    transition: gap 0.3s; /* Smooth transition for gap */
+}
+
+.navbarMenu li {
+    display: flex;
+    height: 23px;
+    line-height: 22.5px;
+    align-items: center;
+}
+
+.navbarMenu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0px 0px;
+    transition: color 0.3s, font-size 0.3s; /* Smooth transition for font size */
+    display: flex;
+    align-items: center;
+}
+
+.navbarMenu li a:hover {
+    color: #f0f0f0;
+}
+
+.navbarMenu li a i {
+    margin-right: 5px;
+}
+
+/* Icon container styles */
+.iconContainer {
+    display: flex;
+    align-items: center;
+    gap: 22px; /* Distance between notification icon and profile link */
+}
+
+.iconContainer li a {
+    padding: 0px 5px;
+    text-align: center;
+    position: relative;
+}
+
+.notificationIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.iconContainer li a .notificationSpan {
+    position: absolute;
+    background-color: green;
+    padding: 7px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f0f0f0;
+    top: 0;
+    right: 0;
+}
+
+/* Profile link styles */
+.profileLink {
+    background-color: black;
+    color: white !important;
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    width: 114px;
+    height: 29px !important;
+}
+
+.profileLink a {
+    height: 29px !important;
+}
+
+.profileIcon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* Greeting text styles */
+.greeting {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 56.74px;
+    letter-spacing: -0.035em;
+    text-align: center;
+    width: 770px;
+    height: 7px;
+    opacity: 50%;
+    display: block;
+    position: fixed;
+    z-index: 1004;
+    top: 80px;
+    animation: marquee 30s linear infinite;
+   
+}
+
+.mobileToggle {
+    display: none;
+}
+
+/* Mobile menu styles */
+.mobileNav {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    z-index: 1002;
+    transition: right 0.3s ease;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobileNavActive {
+    right: 0;
+}
+
+.closeIconSpan {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.navLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.navLinks li {
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.navLinks li:last-child {
+    border-bottom: none;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.loginSignup {
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.loginBtn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    width: 143px;
+    height: 29px;
+}
+
+.greetingMobile {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 56.74px;
+    letter-spacing: -0.035em;
+    text-align: center;
+    width: 770px;
+    height: 7px;
+    opacity: 50%;
+    display: block;
+    position: fixed;
+    z-index: 1004;
+    top: 70px;
+    animation: marquee 30s linear infinite;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Adjustments for screens 1100px and below */
+@media (max-width: 1250px) {
+    .navbarMenu {
+        gap: 24px; /* Reduce gap */
+    }
+
+    .navbarMenu li a {
+        font-size: 13px; /* Medium font size */
+    }
+
+    .socialIcons {
+        gap: 13px; /* Medium social icon gap */
+    }
+
+    .logo {
+        width: 250px; /* Reduce logo size */
+        height: 46px;
+    }
+}
+
+/* Adjustments for screens 900px and below */
+@media (max-width: 1050px) {
+    .navbarMenu {
+        gap: 20px; /* Further reduce gap */
+    }
+
+    .navbarMenu li a {
+        font-size: 10px; /* Smaller font size */
+    }
+
+    .socialIcons {
+        gap: 12px; /* Smaller social icon gap */
+    }
+
+    .logo {
+        width: 180px; /* Further reduce logo size */
+        height: 40px;
+    }
+}
+
+/* Adjustments for screens 780px and below */
+@media (max-width: 800px) {
+    .customNavbar {
+        padding: 10px 10px !important;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Change from center to space-between */
+        height: 114px;
+        position: relative;
+    }
+
+    .mobileToggle {
+        display: flex;
+        position: absolute;
+        top: 10px; /* Adjust this value if needed */
+        right: 10px; /* Adjust this value for alignment */
+        width: 24px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        content: url("/Navbar/Nav-toggle.svg");
+    }
+
+    .logo {
+        width: 140px; /* Further reduce logo size */
+        height: 30px;
+        content: url("/Navbar/Logo.svg");
+    }
+
+    .navbarLeft, .navbarRight {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .socialIcons,.navLink {
+        display: none; /* Hide social icons on very small screens */
+    }
+
+    .mobileNav{
+        height: 543px;
+        width: 70%;
+    }
+    .mobileNavActive {
+        right: 0;
+        box-shadow: -80px 50px 20px 1000px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbarMenu li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profileLink {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media(min-width:801px){
+    .mobileNav {
+        display: none;
+    }
+}
