@@ -68,9 +68,13 @@
 .carouselText {
     position: absolute;
     top: 18vw; /* Adjust this based on your design needs */
-    width: 30vw; /* Adjust this based on your design needs */
+    width: 28vw; /* Adjust this based on your design needs */
+    display: flex;
+    flex-direction: column;
     text-align: justify;
-    margin-left: 2vw; /* Adjust this based on your design needs */
+
+    justify-content: center;
+    margin-left: 3.5vw; /* Adjust this based on your design needs */
     color: white;
     font-size: 2vw; /* Adjust font size based on your design needs */
 }
@@ -78,6 +82,7 @@
 .carouselTextHeader {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .text1 {
@@ -93,7 +98,8 @@
 
 /* Button styling */
 .carouselButton {
-    width: 50%;
+    width: 153px;
+    height: 33px;
     padding: 0.3vw 1.1vw;
     font-size: 1.1vw;
     font-weight: 400;
@@ -148,9 +154,12 @@
         height: 7px;
     }
 
+ 
     .carouselText {
         top: 140px;
         width: 220px;
+  
+        
     }
 
     .text1,
@@ -160,6 +169,10 @@
     }
 
     .carouselButton {
+        border-radius: 2px;
+        padding: 0px 0px!important;
         width: 50%;
+        height: 20px;
     }
+
 }
