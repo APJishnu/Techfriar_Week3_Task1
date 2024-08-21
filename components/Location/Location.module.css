@@ -65,7 +65,7 @@
 }
 
 /* Responsive design for mobile screens */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .layer_6 {
         padding: 20px 16px;
         display: flex;

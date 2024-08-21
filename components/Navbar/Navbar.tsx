@@ -4,6 +4,7 @@
 
   import React, { useState } from 'react';
   import styles from './Navbar.module.css';
+import Link from 'next/link';
 
   const Navbar: React.FC = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,7 +27,7 @@
           </div>
           <div className={styles.navLink}>
             <ul className={styles.navbarMenu}>
-              <li><a href="#">About</a></li>
+              <li><Link passHref href="/about">About</Link></li>
               <li><a href="#">Offers</a></li>
               <li><a href="#">Corporate</a></li>
               <li><a href="#">Personal</a></li>

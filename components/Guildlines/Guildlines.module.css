@@ -69,7 +69,7 @@
   }
   
   /* Responsive Design for Mobile */
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     .headingGuildlines {
       width: 100%;
       height: 24px;

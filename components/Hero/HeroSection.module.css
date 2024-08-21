@@ -3,7 +3,8 @@
         position: absolute;
         right: 0;
         overflow-x: hidden;
-        top:0;
+        top: 0;
+        margin-top: 10px;
         display: flex;
         align-items: center;
         width: 50px;
@@ -48,7 +49,7 @@
         position: absolute;
         right: 0;
         overflow-x: hidden;
-        top: 55px;
+        top: 65px;
         display: flex;
         align-items: center;
         width: 50px;
@@ -145,7 +146,7 @@
         width: max-content;
     }
 
-    .location{
+    .location {
         font-size: 12px;
         display: flex;
         flex-direction: row;
@@ -158,7 +159,8 @@
         width: 188px;
         padding-right: 16px !important;
     }
-    .location2{
+
+    .location2 {
         font-size: 12px;
         display: flex;
         flex-direction: row;
@@ -174,8 +176,8 @@
 
     .hidden {
         display: none;
-      }
-      
+    }
+
 
 
     .location select {
@@ -187,6 +189,7 @@
         background-size: 9px 12px;
         outline: none;
     }
+
     .location2 select {
         appearance: none;
         background-image: url("/HeroSection/Location.svg");
@@ -204,6 +207,7 @@
         color: #000;
         width: 100%;
     }
+
     .locationList2 {
         background-color: transparent;
         border: none;
@@ -218,7 +222,7 @@
     }
 
 
-    
+
     /* Search button */
     .searchButton {
         height: 42px;
@@ -284,12 +288,53 @@
     }
 
 
-    .mobileBookingContainer{
+    .mobileBookingContainer {
         display: none;
     }
 
+    /* responsive for max-width 1250px */
+
+
+/* Responsive styles for .additionalDetails between 801px and 1250px */
+@media (min-width: 801px) and (max-width: 1400px) {
+
+    .additionalDetails {
+        padding-left: 4%; /* Adjust padding for medium screens */
+        column-gap: 1%; /* Reduce column gap for medium screens */
+        height: auto; /* Adjust height based on content */
+        width: auto; /* Adjust width based on content */
+        font-size: 10px; /* Adjust font size for medium screens */
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Ensure elements are vertically centered */
+    }
+
+    .location,
+    .location2 {
+        font-size: 10px; /* Adjust font size for medium screens */
+        width: 250px; /* Adjust width for medium screens */
+        padding-right: 8px; /* Adjust padding for medium screens */
+    }
+
+    .location select,
+    .location2 select {
+        padding: 14px 14px 14px 30px; /* Adjust padding for medium screens */
+        background-size: 10px 14px; /* Adjust background size for medium screens */
+    }
+  
+    .quickBook{
+        font-size: 10px;
+        height: 100%;
+        width: 90%;
+    }
+}
+
+
+
+
     /* Responsive (mobile) styles */
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
+
         /* Slide button contact and customer service */
         .slideInButton1,
         .slideInButton2 {
@@ -297,40 +342,40 @@
             margin-top: 7px;
         }
 
-        .mainContainer{
+        .mainContainer {
             padding: 0px;
-            margin:0;
+            margin: 0;
             display: flex;
             flex-direction: column;
             position: relative;
-          
-       
+
+
         }
-     
+
         /* Hero section */
         .hero {
-            
+
             padding: 0px 16px;
-            margin:0;
+            margin: 0;
             height: unset;
-        
+
         }
 
         .quickPickup {
-          
+
             width: 100%;
             height: 120px;
             background-size: cover;
             border-radius: 20px;
             display: flex;
-        
+
             align-items: center;
             justify-content: center;
-           
+
         }
 
-   
-        
+
+
 
         .location,
         .pickupTime {
@@ -359,12 +404,13 @@
         }
 
         .quickBook {
+          
             flex-direction: column;
             align-items: center;
         }
 
         .downloadLinks {
-        
+
             text-align: center;
             flex-direction: column;
             padding-left: 0;
@@ -377,153 +423,156 @@
         }
 
 
-        .mobileBookingContainer{
-            display:block;
+        .mobileBookingContainer {
+            display: block;
         }
 
 
 
         /* hide desktop elements */
 
-        .pickupOptions,.additionalDetails{
+        .pickupOptions,
+        .additionalDetails {
             display: none;
         }
 
 
 
+        /* HeroSection.module.css */
 
-        .mobileBookingSection{
+        .mobileBookingContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top: 10px;
+            position: relative;
+        }
 
+        .mobileBookingSection {
+            width: 96%;
+        }
+
+        .mobileBookingButtons {
+            display: flex;
+            width: 100%;
+        }
+
+        .mobileBookingButton,
+        .mobileBookingButton.outline {
+            flex: 1;
+            padding: 10px;
+            margin: 5px;
+            background-color: white;
+            color: #E21E26;
+            border: 2px solid #E21E26;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .activeButton {
+            background-color: #E21E26;
+            color: white;
+        }
+
+        .tripOptionsContainer {
+            width: 100%;
+            margin-top: 20px;
+            box-sizing: border-box;
+        }
+
+        .selectorOptions {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .selectorOption {
+            all: unset;
+            color: #c0baba;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            position: relative;
+        }
+
+        .selectorOption:focus {
+            color: #000000;
+        }
+
+        .focused .line {
+            display: block;
+        }
+
+        .line {
+            display: none;
+            width: 100%;
+            border-radius: 2px;
+            height: 2px;
+            background-color: #000000;
+        }
+
+        .dropdownOptions {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .dropdownOptions select,
+        .dropdownOptions input {
+            width: calc(100%);
+            /* 16px padding on each side */
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+            border: 0;
+            border-radius: 8px;
+            background: #F6F7F9;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .dropdownOptions select {
+            appearance: none;
+            background-image: url("/HeroSection/Location.svg");
+            background-repeat: no-repeat;
+            background-position: left 16px center;
+            padding: 16px 16px 16px 36px;
+            background-size: 9px 12px;
+        }
+
+        .dropdownOptions input {
+            appearance: none;
+            background-image: url("/HeroSection/date.svg");
+            background-repeat: no-repeat;
+            background-position: left 16px center;
+            padding: 16px 16px 16px 36px;
+            background-size: 9px 12px;
+        }
+
+        .searchButtonDiv {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            
         }
 
-
-        /* Mobile booking section styles */
-.mobileBookingContainer {
-    padding: 0px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px; /* Space above the booking container */
-    
-}
-
-.mobileBookingButtons {
-    
-    display: flex;
-    justify-content: space-between;
-    width: 100%; /* Full width of the container */
-}
-
-.mobileBookingButton,
-.mobileBookingButton.outline {
-    flex: 1;
-    padding: 10px;
-    margin: 5px;
-    background-color: white;
-    color: #E21E26; /* Button text color */
-    border: 2px solid #E21E26; /* Button border color */
-    border-radius: 5px;
-    text-align: center;
-    font-size: 16px; /* Font size for button text */
-}
-
-.mobileBookingButton.activeButton,
-.mobileBookingButton.outline.activeButton {
-    background-color: #E21E26; /* Active button background color */
-    color: white; /* Active button text color */
-}
-
-
-.tripOptionsContainer {
-    width: 100%;
-    margin-top: 20px; /* Space above the trip options container */
-}
-
-.selectorOptions {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px; /* Space below the selector options */
-}
-
-.selectorOption {
-    all: unset; /* Remove all default styling */
-    color: #c0baba; /* Default text color for options */
-    text-align: center;
-    flex-direction: column;
-    font-size: 13px; /* Font size for option text */
-}
-
-
-.selectorOption select {
-    width: 100%;
-    border: none;
-    padding: 5px;
-    font-size: 13px; /* Font size for select input */
-}
-
-.dropdownOptions {
-    width: 100%;
-    margin-bottom: 15px; /* Space below dropdown options */
-}
-
-.dropdownOptions select,
-.dropdownOptions input {
-    width: 100%;
-    padding: 10px 0px ;
-    margin-top: 10px; /* Space above input elements */
-    font-size: 14px; /* Font size for inputs */
-    border: 0;
-    border-radius: 8px;
-    background: #F6F7F9; /* Background color for inputs */
-}
-
-
-
-.searchButtonDiv {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center-align the search button */
-}
-
-.searchButton {
-    width: 201px;
-    padding: 12px;
-    background: #E21E26; /* Background color for search button */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white; /* Text color for search button */
-    border: none;
-    border-radius: 5px;
-    font-size: 16px; /* Font size for search button text */
-}
-
-
-.selectorOption:focus {
-    color: #000000; /* Text color when option is focused */
-}
-
-.selectorOption:focus .line {
-    display: block; /* Show line when option is focused */
-}
-
-.line {
-    display: none; /* Hide line by default */
-    width: 100%;
-    border-radius: 2px;
-    height: 2px;
-    background-color: #000000; /* Line color */
-}
-
-
-
-
+        .searchButton {
+            width: 201px;
+            padding: 12px;
+            background: #E21E26;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
 
     }

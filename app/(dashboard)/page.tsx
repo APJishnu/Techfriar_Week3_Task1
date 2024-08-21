@@ -1,6 +1,6 @@
-import HeroSection from "../components/Hero/HeroSection";
+import HeroSection from "../../components/Hero/HeroSection";
 import Carousel from "@/components/Carousel/Carousel";
-import Cars from '../components/Cars/Cars'; 
+import Cars from '../../components/Cars/Cars'; 
 import Subscription from "@/components/Subscription/Subscription";
 import Guildlines from "@/components/Guildlines/Guildlines";
 import Location from "@/components/Location/Location";
@@ -16,6 +16,7 @@ const Home: React.FC = () => {
       <Guildlines/>
       <Location/>
       <Faq/>
+      
     </>
   );
 };
