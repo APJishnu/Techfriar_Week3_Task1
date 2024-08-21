@@ -48,7 +48,7 @@ import Link from 'next/link';
               </div>
             </ul>
             <div className={styles.greeting}>
-              Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand Sales Counters | All Rates inclusive of VAT. T&C's apply | Follow us on Social Media for New Offers
+              Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand Sales Counters | All Rates inclusive of VAT. T&C s apply | Follow us on Social Media for New Offers
             </div>
           </div>
         </div>
