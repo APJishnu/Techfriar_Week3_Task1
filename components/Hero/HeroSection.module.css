@@ -104,12 +104,25 @@
     .vehicleType {
         cursor: pointer;
         background-color: #ffffff2a;
-        color: #fff;
+        color: #fff!important;
         border: none;
         padding: 3px 16px;
         border-radius: 15px;
         outline: none;
+        appearance: none; /* Removes default arrow */
+        position: relative;
+        padding-right: 30px; /* Extra space for the custom arrow */
+        background-image: url("/HeroSection/arrow.svg"); /* Custom dropdown arrow */
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        background-size: 9px 12px;
+        color: #fff;
+        filter: brightness(1000%);
     }
+ 
+
+    
+
 
     /* Pickup link styles */
     .pickupLink {
@@ -295,39 +308,50 @@
     /* responsive for max-width 1250px */
 
 
-/* Responsive styles for .additionalDetails between 801px and 1250px */
-@media (min-width: 801px) and (max-width: 1400px) {
+    /* Responsive styles for .additionalDetails between 801px and 1250px */
+    @media (min-width: 801px) and (max-width: 1400px) {
 
-    .additionalDetails {
-        padding-left: 4%; /* Adjust padding for medium screens */
-        column-gap: 1%; /* Reduce column gap for medium screens */
-        height: auto; /* Adjust height based on content */
-        width: auto; /* Adjust width based on content */
-        font-size: 10px; /* Adjust font size for medium screens */
-        display: flex;
-        flex-direction: row;
-        align-items: center; /* Ensure elements are vertically centered */
-    }
+        .additionalDetails {
+            padding-left: 4%;
+            /* Adjust padding for medium screens */
+            column-gap: 1%;
+            /* Reduce column gap for medium screens */
+            height: auto;
+            /* Adjust height based on content */
+            width: auto;
+            /* Adjust width based on content */
+            font-size: 10px;
+            /* Adjust font size for medium screens */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /* Ensure elements are vertically centered */
+        }
 
-    .location,
-    .location2 {
-        font-size: 10px; /* Adjust font size for medium screens */
-        width: 250px; /* Adjust width for medium screens */
-        padding-right: 8px; /* Adjust padding for medium screens */
-    }
+        .location,
+        .location2 {
+            font-size: 10px;
+            /* Adjust font size for medium screens */
+            width: 250px;
+            /* Adjust width for medium screens */
+            padding-right: 8px;
+            /* Adjust padding for medium screens */
+        }
 
-    .location select,
-    .location2 select {
-        padding: 14px 14px 14px 30px; /* Adjust padding for medium screens */
-        background-size: 10px 14px; /* Adjust background size for medium screens */
+        .location select,
+        .location2 select {
+            padding: 14px 14px 14px 30px;
+            /* Adjust padding for medium screens */
+            background-size: 10px 14px;
+            /* Adjust background size for medium screens */
+        }
+
+        .quickBook {
+            font-size: 10px;
+            height: 100%;
+            width: 90%;
+        }
     }
-  
-    .quickBook{
-        font-size: 10px;
-        height: 100%;
-        width: 90%;
-    }
-}
 
 
 
@@ -405,7 +429,7 @@
         }
 
         .quickBook {
-          
+
             flex-direction: column;
             align-items: center;
         }
@@ -575,5 +599,5 @@
             border-radius: 5px;
             font-size: 16px;
         }
-        
+
     }

@@ -53,10 +53,10 @@ const Subscription: React.FC = () => {
                   setEmailError(''); // Clear error message on input change
                 }}
               />
-               </div>
-              {/* Show error message if email is invalid */}
-              {emailError && <p className={styles.errorMessage}>{emailError}</p>}
-           
+            </div>
+            {/* Show error message if email is invalid */}
+            {emailError && <p className={styles.errorMessage}>{emailError}</p>}
+
             <p className={styles.adsParagraph}>
               Please Select The Ways You Would Like To Hear From Diamondlease, And Confirm That You re Happy For
               Us To Store Your Data In Line With Our Privacy Policy.
@@ -91,24 +91,24 @@ const Subscription: React.FC = () => {
         <h2 className={styles.subscribeHeader}>Subscribe here for exclusive offers and updates!</h2>
         <form className={styles.subscriptionForm} onSubmit={handleSubscribe} noValidate>
 
-            <input
-              type="text"
-              placeholder="Name"
-              className={styles.inputField}
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className={styles.inputField}
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-                setEmailError(''); // Clear error message on input change
-              }}
-            />
-     
+          <input
+            type="text"
+            placeholder="Name"
+            className={styles.inputField}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            className={styles.inputField}
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+              setEmailError(''); // Clear error message on input change
+            }}
+          />
+
 
           {/* Show error message if email is invalid */}
           {emailError && <p className={styles.errorMessage}>{emailError}</p>}

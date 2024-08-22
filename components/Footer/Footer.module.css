@@ -115,7 +115,8 @@
     margin-bottom: 10px;
     margin-left: 0px;
 }
-.socialMedia ul{
+
+.socialMedia ul {
     padding-left: 0;
 }
 
@@ -170,6 +171,7 @@
     .DesktopFooter {
         display: none;
     }
+
     .mobileFooterMainDiv {
         display: block;
     }

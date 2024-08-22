@@ -124,7 +124,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             <DateComponent />
-      
+
             <div className={styles.searchButton}>
               <button>
                 <img src="../HeroSection/search_icon.svg" alt="Search" />
@@ -156,79 +156,79 @@ const HeroSection: React.FC = () => {
 
       <div className={styles.mobileBookingContainer}>
         <div className={styles.mobileBookingSection}>
-      <div className={styles.mobileBookingButtons}>
-        <button 
-          id="bookCarBtn" 
-          className={`${styles.mobileBookingButton} ${isTripOptionsVisible ? styles.activeButton : ''}`} 
-          onClick={handleBookCarClick}
-        >
-          Book a Car
-        </button>
-        <button 
-          id="quickBookBtn" 
-          className={`${styles.mobileBookingButton} ${styles.outline} ${!isTripOptionsVisible ? styles.activeButton : ''}`}
-        >
-          Quick Book
-        </button>
-      </div>
-
-      {isTripOptionsVisible && (
-        <div id="tripOptions" className={styles.tripOptionsContainer}>
-          <div className={styles.selectorOptions}>
-            <button 
-              className={`${styles.selectorOption} ${activeOption === 'samePickUp' ? styles.focused : ''}`} 
-              id="samePickUpBtn"
-              onClick={handleSamePickUpClick}
+          <div className={styles.mobileBookingButtons}>
+            <button
+              id="bookCarBtn"
+              className={`${styles.mobileBookingButton} ${isTripOptionsVisible ? styles.activeButton : ''}`}
+              onClick={handleBookCarClick}
             >
-              Same as Pick-Up <span className={styles.line}></span>
+              Book a Car
             </button>
-            <button 
-              className={`${styles.selectorOption} ${activeOption === 'differentDropOff' ? styles.focused : ''}`} 
-              id="differentDropOffBtn"
-              onClick={handleDifferentDropOffClick}
+            <button
+              id="quickBookBtn"
+              className={`${styles.mobileBookingButton} ${styles.outline} ${!isTripOptionsVisible ? styles.activeButton : ''}`}
             >
-              Different Drop-Off <span className={styles.line}></span>
+              Quick Book
             </button>
-            <select className={styles.selectorOption} id="vehicleTypeSelect">
-              <option value="" disabled selected>Vehicle Type</option>
-              <option value="car">Car</option>
-              <option value="bike">Bike</option>
-            </select>
           </div>
 
-          {isPickUpOptionsVisible && (
-            <div id="pickUpOptions" className={styles.dropdownOptions}>
-              <select>
-                <option value="location1">Pick-Up Location</option>
-                <option value="location2">Location 2</option>
-              </select>
-              <input type="datetime-local" defaultValue={new Date().toISOString().slice(0,16)} />
-              <input type="datetime-local" defaultValue={new Date().toISOString().slice(0,16)} />
+          {isTripOptionsVisible && (
+            <div id="tripOptions" className={styles.tripOptionsContainer}>
+              <div className={styles.selectorOptions}>
+                <button
+                  className={`${styles.selectorOption} ${activeOption === 'samePickUp' ? styles.focused : ''}`}
+                  id="samePickUpBtn"
+                  onClick={handleSamePickUpClick}
+                >
+                  Same as Pick-Up <span className={styles.line}></span>
+                </button>
+                <button
+                  className={`${styles.selectorOption} ${activeOption === 'differentDropOff' ? styles.focused : ''}`}
+                  id="differentDropOffBtn"
+                  onClick={handleDifferentDropOffClick}
+                >
+                  Different Drop-Off <span className={styles.line}></span>
+                </button>
+                <select className={styles.selectorOption} id="vehicleTypeSelect">
+                  <option value="" disabled selected>Vehicle Type</option>
+                  <option value="car">Car</option>
+                  <option value="bike">Bike</option>
+                </select>
+              </div>
+
+              {isPickUpOptionsVisible && (
+                <div id="pickUpOptions" className={styles.dropdownOptions}>
+                  <select>
+                    <option value="location1">Pick-Up Location</option>
+                    <option value="location2">Location 2</option>
+                  </select>
+                  <input type="datetime-local" defaultValue={new Date().toISOString().slice(0, 16)} />
+                  <input type="datetime-local" defaultValue={new Date().toISOString().slice(0, 16)} />
+                </div>
+              )}
+
+              {isDropOffOptionsVisible && (
+                <div id="dropOffOptions" className={styles.dropdownOptions}>
+                  <select>
+                    <option value="location1">Pick-Up Location</option>
+                    <option value="location2">Location 2</option>
+                  </select>
+                  <select>
+                    <option value="location3">Drop-Off Location</option>
+                    <option value="location4">Location 4</option>
+                  </select>
+                  <input type="datetime-local" defaultValue={new Date().toISOString().slice(0, 16)} />
+                  <input type="datetime-local" defaultValue={new Date().toISOString().slice(0, 16)} />
+                </div>
+              )}
+
+              <div className={styles.searchButtonDiv}>
+                <button className={styles.searchButton}>Search</button>
+              </div>
             </div>
           )}
-
-          {isDropOffOptionsVisible && (
-            <div id="dropOffOptions" className={styles.dropdownOptions}>
-              <select>
-                <option value="location1">Pick-Up Location</option>
-                <option value="location2">Location 2</option>
-              </select>
-              <select>
-                <option value="location3">Drop-Off Location</option>
-                <option value="location4">Location 4</option>
-              </select>
-              <input type="datetime-local" defaultValue={new Date().toISOString().slice(0,16)} />
-              <input type="datetime-local" defaultValue={new Date().toISOString().slice(0,16)} />
-            </div>
-          )}
-
-          <div className={styles.searchButtonDiv}>
-            <button className={styles.searchButton}>Search</button>
-          </div>
         </div>
-      )}
-    </div>
-    </div>
+      </div>
     </div>
   );
 };

@@ -1,21 +1,20 @@
-
-    .pickupTime {
-        font-size: 12px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        border-radius: 20px;
-        background-color: #fff;
-        height: 100%;
-        width: 188px;
-        position: relative;
-        column-gap: 10px;
-        background-image: url("/HeroSection/date.svg");
+.pickupTime {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 100%;
+    width: 188px;
+    position: relative;
+    column-gap: 10px;
+    background-image: url("/HeroSection/date.svg");
     background-repeat: no-repeat;
     background-position: left 16px center;
-    }
+}
 
 
 
@@ -24,12 +23,12 @@
     height: 10px;
 }
 
-.dateTime{
+.dateTime {
     position: relative;
     display: flex;
     column-gap: 10px;
     appearance: none;
-   
+
     background-size: 9px 12px;
     outline: none;
 }
@@ -69,48 +68,67 @@
 }
 
 @media (min-width: 801px) and (max-width: 1400px) {
+
     /* Adjust pickupTime for medium-large screens */
     .pickupTime {
-        font-size: 10px; /* Slightly increase font size */
-        width: 260px; /* Adjust the width to better fit medium-large screens */
-        height: 30px; /* Adjust the height to fit content */
-        padding: 10px; /* Add padding for better spacing */
-        background-size: 16px 16px; /* Adjust the background image size */
-        background-position: left 10px center; /* Reposition background */
+        font-size: 10px;
+        /* Slightly increase font size */
+        width: 260px;
+        /* Adjust the width to better fit medium-large screens */
+        height: 30px;
+        /* Adjust the height to fit content */
+        padding: 10px;
+        /* Add padding for better spacing */
+        background-size: 16px 16px;
+        /* Adjust the background image size */
+        background-position: left 10px center;
+        /* Reposition background */
     }
 
     /* Adjust the calendar icon size */
     .calenderIcon {
-        width: 8px!important; /* Increase size for larger screens */
-        height: 8px!important;
+        width: 8px !important;
+        /* Increase size for larger screens */
+        height: 8px !important;
     }
 
     /* Adjust dateTime styles for medium-large screens */
     .dateTime {
-        column-gap: 8px; /* Reduce gap between elements */
-        font-size: 10px; /* Slightly increase font size */
-        padding: 8px; /* Add padding for better touch target */
+        column-gap: 8px;
+        /* Reduce gap between elements */
+        font-size: 10px;
+        /* Slightly increase font size */
+        padding: 8px;
+        /* Add padding for better touch target */
     }
 
     /* DateTimePicker container styling */
     .dateTimePicker,
     .arrivalDateTimePicker {
-        padding: 12px; /* Increase padding for better spacing */
-        border-radius: 10px; /* Adjust border-radius for a smoother look */
-        width: 150px; /* Adjust width for medium-large screens */
-        font-size: 1px!important; /* Slightly increase font size */
+        padding: 12px;
+        /* Increase padding for better spacing */
+        border-radius: 10px;
+        /* Adjust border-radius for a smoother look */
+        width: 150px;
+        /* Adjust width for medium-large screens */
+        font-size: 1px !important;
+        /* Slightly increase font size */
     }
 
     /* Inputs and button inside dateTimePicker */
     .dateTimePicker input,
     .arrivalDateTimePicker input {
-        padding: 6px; /* Add more padding for better usability */
-        font-size: 1px; /* Slightly increase font size */
+        padding: 6px;
+        /* Add more padding for better usability */
+        font-size: 1px;
+        /* Slightly increase font size */
     }
 
     .dateTimePicker button,
     .arrivalDateTimePicker button {
-        padding: 6px 12px; /* Adjust padding for better touch target */
-        font-size: 1px; /* Slightly increase font size */
+        padding: 6px 12px;
+        /* Adjust padding for better touch target */
+        font-size: 1px;
+        /* Slightly increase font size */
     }
 }

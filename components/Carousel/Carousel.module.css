@@ -9,7 +9,7 @@
     justify-content: center;
     overflow: hidden;
     box-sizing: border-box;
-    
+
 }
 
 /* Carousel styling */
@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-  
+
 }
 
 /* Carousel images styling */
@@ -67,16 +67,20 @@
 /* Carousel text styling */
 .carouselText {
     position: absolute;
-    top: 18vw; /* Adjust this based on your design needs */
-    width: 28vw; /* Adjust this based on your design needs */
+    top: 18vw;
+    /* Adjust this based on your design needs */
+    width: 28vw;
+    /* Adjust this based on your design needs */
     display: flex;
     flex-direction: column;
     text-align: justify;
 
     justify-content: center;
-    margin-left: 3.5vw; /* Adjust this based on your design needs */
+    margin-left: 3.5vw;
+    /* Adjust this based on your design needs */
     color: white;
-    font-size: 2vw; /* Adjust font size based on your design needs */
+    font-size: 2vw;
+    /* Adjust font size based on your design needs */
 }
 
 .carouselTextHeader {
@@ -116,8 +120,8 @@
 }
 
 
-@media (min-width:801px)and(max-width: 1250px){
-    
+@media (min-width:801px)and(max-width: 1250px) {
+
     .carouselText {
         top: 140px;
     }
@@ -131,7 +135,7 @@
         height: 217px;
         margin: 0;
         padding: 0;
-       
+
     }
 
     .carousel {
@@ -154,12 +158,12 @@
         height: 7px;
     }
 
- 
+
     .carouselText {
         top: 140px;
         width: 220px;
-  
-        
+
+
     }
 
     .text1,
@@ -170,7 +174,7 @@
 
     .carouselButton {
         border-radius: 2px;
-        padding: 0px 0px!important;
+        padding: 0px 0px !important;
         width: 50%;
         height: 20px;
     }

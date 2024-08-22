@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Footer.module.css';
 
 const Footer: React.FC = () => {
-    
+
     return (
         <>
             {/* Desktop Footer */}
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
                         </div>
 
                         <div className={styles.AlHabthoorCompanyList}>
-                            
+
                             <p>Al Habtoor Company List</p>
                             <ul>
                                 <li><a href="#">Education</a></li>
