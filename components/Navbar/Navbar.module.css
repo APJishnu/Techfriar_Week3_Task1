@@ -401,7 +401,7 @@
         opacity: 50%;
         display: block;
         position: fixed;
-        z-index: 1004;
+        z-index: 1002;
         margin-top: -5px;
         margin-left: -400px!important;
         animation: marquee 30s linear infinite;
